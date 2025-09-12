@@ -30,9 +30,7 @@ elif input_number < 0:
 #Then I made an else if statement saying that if the number is less than zero, the user will see that it's negative.
 else:
         print("Zero")
-#and Lastly, anything that is not a number will be given zero.
-
-
+#And Lastly, anything that is not a number will be given zero.
 
 
 
@@ -42,6 +40,18 @@ TASK 3:
 Write code that takes two numbers as input (an integer and a float), 
 performs addition, subtraction, multiplication, and division, and prints the results.
 """
+
+print("Insert an interger or float to perform the following equations: +, -, /, *")
+
+number_input = int(input("Input a whole number here:"))
+#After setting a variable that takes input, I'll be making elif statements if a number other than an interger is placed.
+
+number2_input = float(input("Input a decimal or float:"))
+
+addition = number_input + number2_input
+subtraction = number_input - number2_input
+division = number_input / number2_input if number2_input == 0 else print("Cannont divide by zero")
+
 
 
 """
