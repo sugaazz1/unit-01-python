@@ -63,7 +63,15 @@ Check if a year is a century year and a leap year.
 '''
 print("--Task 4---")
 
-
+years = int(input("Enter a year to find out if it's a century year and a leap year: "))
+if years % 4==0 and years % 100==0:
+    print("Yes it's a Century and a Leap year.")
+elif years % 4==0 and not years % 10!==0:
+    print("This is a leap year")
+elif years %4!==0 and not years % 10==0:
+    print("This is a century year:")
+else:
+    ("I dunno")
 
 
 '''
@@ -73,6 +81,21 @@ The shipping cost is $5 per kilogram for Zone A and $7 per kilogram for Zone B.
 If the order weight is less than 0 kg, return an error message.
 '''
 print("--Task 5---")
+
+
+
+kilos = int(input("How much does you package weigh in kilogram? "))
+if kilos == 0:
+    print("Enter the correct weight.")
+zones = input("Which zone are you located in Zone A or B? ")
+if zones.lower() == "zone a" or zones.lower() == "a":
+    shipping_a = kilos * 5
+    print("Your shipping cost is $", shipping_a)
+elif zones.lower() == "zone b" or zones.lower() == "b":
+    shipping_b = kilos * 7
+    print("Your shipping cost is $", shipping_b)
+else:
+    print("Yurrrrr")
 
 
 
