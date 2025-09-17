@@ -64,15 +64,20 @@ Check if a year is a century year and a leap year.
 print("--Task 4---")
 
 years = int(input("Enter a year to find out if it's a century year and a leap year: "))
+#Right, so to find out how to do this, I had to ask google how to check if a year is a leap year and a century year. It said to divide by 4 and if it equals zero, then it's a leap year.
+#And if it is also divisible by 100, then it's both a century and leap year. But if it's divisible by 100(for century year) and not by 4, then it's a century year..
 if years % 4==0 and years % 100==0:
     print("Yes it's a Century and a Leap year.")
-elif years % 4==0 and not years % 10!==0:
+#This was the easiest part, I made a condition that checked if the year entered was divisible by 4 and 100, if it was, then it was both a century and a leap year.
+elif years % 4==0 and not years % 100==0:
     print("This is a leap year")
-elif years %4!==0 and not years % 10==0:
+#For this one I made a condition that checked if the year was divisble by 4, but if it wasn't divisble by 100, then it should print, "This is a leap year."
+elif years % 4!=0 and years % 100==0:
     print("This is a century year:")
+#For this one I made a condition that states that if the year is not divisible by 4, but divisible by 100, then it is a century year.
 else:
-    ("I dunno")
-
+   print("Not a century or a leap year.")
+#I did it Mr. Forlenza :) Do I get extra credits?
 
 '''
 Exercise 5:
@@ -83,17 +88,20 @@ If the order weight is less than 0 kg, return an error message.
 print("--Task 5---")
 
 
-
 kilos = int(input("How much does you package weigh in kilogram? "))
+#I made a variable to store the input.
 if kilos == 0:
     print("Enter the correct weight.")
+#Incase they accidentally put zero, which is incorrect.
 zones = input("Which zone are you located in Zone A or B? ")
 if zones.lower() == "zone a" or zones.lower() == "a":
     shipping_a = kilos * 5
-    print("Your shipping cost is $", shipping_a)
+    print("Your shipping cost is $",shipping_a)
+#I made a conditional statement to accept "zone a" or "a" as the input, then I calculated the shipping cost based the zones.
 elif zones.lower() == "zone b" or zones.lower() == "b":
     shipping_b = kilos * 7
-    print("Your shipping cost is $", shipping_b)
+    print("Your shipping cost is $",shipping_b)
+#I made a conditional statement to accept "zone b" or "b" as the input, then I calculated the shipping cost based the zones.
 else:
     print("Yurrrrr")
 
