@@ -7,7 +7,7 @@ print("---Task 1---")
 hehe = "I just wanna eatttt"
 for x in hehe:
     print(x)
-
+#This little code prints out the string inside the varible inside hehe as single character in a line.
 
 """
 Exercise 2:
@@ -17,10 +17,11 @@ print("---Task 2---")
 
 summy = [1,2,3,4,5,6,7,8,9,10]
 total = 0
-
+#I created the variable to hold the number of list.
 for x in summy:
     total += x 
     print(total)
+#the += adds the previous value to it self. So in this case, total = total+x.
 
 """
 Exercise 3:
@@ -29,10 +30,10 @@ Write a program to print the length of each word in a sentence using a for loop 
 print("---Task 3---")
 
 listy = ["Turkey", "Beans", "Potato", "Yams", "Gravy", "YOU NAMEEE ITTT"]
-
+#This list holds the various string.
 for list in listy:
     print(len(list))
-
+#The len() prints out the length of each letter as numbers. For example, turkey as 6 letters, so it prints out 6.
 """
 Excercise 4:
 Write a program that creates a dictionary (atleast 4 key:value pairs) and then
@@ -53,7 +54,7 @@ my_dict = {
 for x in my_dict:
     print(x)
     print(my_dict[x])
-    
+#This little code "print(my_dict[x])" prints the number of each items that's in the dictionary out. 
 
 #print(my_dict["Banana"])
 
