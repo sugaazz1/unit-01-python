@@ -1,5 +1,5 @@
-with open("todo.txt") as file:
-     my_list = file.readlines()
+with open("todo.txt", "w+") as file:
+     my_list = file.read()
 
 
 print("Welcome to your To Do list. ")
@@ -9,7 +9,9 @@ while True:
     if ins_todo.lower() == "add":
         todo_list = input("What would you like to add: ")
         print()
-        my_list.append(todo_list)
+        with open("todo.txt", "a") as file:
+           file.write(todo_list+"\n")
+        #my_list.append(todo_list)
         print()
         print("Your current to do list:")
         for i in my_list:
@@ -35,6 +37,5 @@ while True:
                  print()
     elif ins_todo.lower() == "exit":
          with open("todo.txt") as file:
-              my_list = file.writelines()
-
+              my_list = file.read()
               break
