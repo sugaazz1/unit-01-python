@@ -11,7 +11,7 @@ print(count)
 """print("give me a number")
 n = int(input())
 
-for num in range(1, n):
+for num in range(1, n+1):
     if num % 2 == 0:
         print(num, "is even.")
     else:
@@ -20,15 +20,15 @@ for num in range(1, n):
 
 """num = int(input("Enter an integer: "))
 
-if num < -1:
+if num < 0:
   print("No negative numbers.")
 else:
   result = 1
-  for i in range(-1, num):
-    result *= num
+  for i in range(1, num + 1):
+    result *= i   
 
-  print("Factorial of " + num + "is" + result)
-  """
+print(f"Factorial of ", num,"is", result)"""
+
 
 """attempts = 0
 correct_password = "secret" 
@@ -47,3 +47,4 @@ while True:
             print("Too many attempts")
             break
 """
+
