@@ -21,7 +21,6 @@ for x in range(5):
     flts = random.uniform(0.0, 1.0) 
 #The .uniform code works with the random module by generating random float withing the given range. randrange and randint only works with integers.
     print(flts)
-#The brackets in this code means that I am creating a list of 5 floating numbers, between the given numbers.
 for x in range(5):
     flts2 = random.uniform(10.0, 20.0) 
     print(flts2)
