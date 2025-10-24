@@ -56,18 +56,22 @@ Test these methods with instances of the class.
 """
 print("---Task 3---")
 
-class BankAccount:
+class BankAccount:#created a class for BankAccount using the 'class' command.
     def __init__(self, balance, owner):
-        self.balance = balance
-        self.owner = owner
-    def deposit(self, cash):
-        self.balance += cash
-        print("")
-    def withdraw(self, cash):
-        self.withdraw -= cash
-        print(f"You have withdrawed {self.withdraw}")
-AccInfo = BankAccount(10000, "Billy")
+        self.balance = balance#This code stores the starting value of the account which we assign at the end.
+        self.owner = owner#This stores the owner name.
 
-AccInfo.deposit()
-AccInfo.withdraw()
+    def deposit(self, cash):#This 'method' allows us/the user to add cash to their back account.
+        self.balance += cash
+        print(f"You have deposited {cash}, your new balance is {self.balance}")
+#The following print statements prints how much you deposited and how much your new balance is.
+    
+    def withdraw(self, cash):#This 'method' allows the user/us to withdraw money from the account.
+        self.balance -= cash
+        print(f"You have withdrew {cash}, your new balance is {self.balance}")
+
+AccInfo = BankAccount(10000, "Billy")#creates an object for the BankAccount class for billy to check if it works.
+
+AccInfo.deposit(500)
+AccInfo.withdraw(500)
 
