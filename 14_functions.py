@@ -21,9 +21,9 @@ print("---Task 2---")
 def exponents(a,b):
     """
     """
-    return a ** b 
+    return a ** b#To square root a number, you use 2 asteriks *. 
 
-print(exponents(3,5))
+print(exponents(3,5))#3 in this scenario, is being raised to the power of 5.
 print()
 """
 Task 3: Even or Odd
@@ -35,9 +35,9 @@ print("---Task 3---")
 def test(a):
     """
     """
-    return a % 2 == 0
+    return a % 2 == 0 #the % sign is used to find numbers that have 0 remainder. It's saying that if a number is divisible by 2, it'll print true else print false.
 
-print(test(9))
+print(test(9)) #Since 9 isn't divisible by 2, It'll print false.
 
 
 print()
@@ -50,8 +50,8 @@ print("---Task 4---")
 def area(c,d):
     """
     """
-    return c*d
-print(area(4,9))
+    return c*d #This code multiples the given number by the second given number to find the area.
+print(area(4,9))#The length is 4, and the w is 9.
 
 print()
 """
